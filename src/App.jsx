@@ -1,5 +1,4 @@
 import './App.css';
-
 const App = () => {
   const horarioClases = [
     {
@@ -24,10 +23,8 @@ const App = () => {
       hora: '08 am - 09 am',
       lunes: 'Proyecto de Vida',
       martes: 'Programación Básica',
-
       miercoles: 'CÁTEDRA MINUTO DE DIOS',
-
-      jueves: 'Gestión Básica de la Información',
+      jueves: '-',
       viernes: 'Comunicación Escrita y Procesos Lectores I',
       sabado: '-',
     },
@@ -35,10 +32,8 @@ const App = () => {
       hora: '09 am - 10 am',
       lunes: 'Cálculo Diferencial',
       martes: 'Programación Básica',
-
       miercoles: 'CÁTEDRA MINUTO DE DIOS',
-
-      jueves: 'Gestión Básica de la Información',
+      jueves: '-',
       viernes: 'Comunicación Escrita y Procesos Lectores I',
       sabado: '-',
     },
@@ -69,7 +64,6 @@ const App = () => {
       viernes: 'Programación Básica',
       sabado: '-',
     },
-
     {
       hora: '01 pm - 02 pm',
       lunes: '-',
@@ -102,6 +96,24 @@ const App = () => {
       lunes: '-',
       martes: '-',
       miercoles: '-',
+      jueves: 'Gestión Básica de la Información',
+      viernes: '-',
+      sabado: '-',
+    },
+    {
+      hora: '05 pm - 06 pm',
+      lunes: '-',
+      martes: '-',
+      miercoles: '-',
+      jueves: 'Gestión Básica de la Información',
+      viernes: '-',
+      sabado: '-',
+    },
+    {
+      hora: '04 pm - 05 pm',
+      lunes: '-',
+      martes: '-',
+      miercoles: '-',
       jueves: '-',
       viernes: '-',
       sabado: '-',
@@ -115,71 +127,126 @@ const App = () => {
       viernes: '-',
       sabado: '-',
     },
+    {
+      hora: '06 pm - 07 pm',
+      lunes: '-',
+      martes: '-',
+      miercoles: '-',
+      jueves: '-',
+      viernes: '-',
+      sabado: '-',
+    },
+    {
+      hora: '07 pm - 08 pm',
+      lunes: '-',
+      martes: '-',
+      miercoles: '-',
+      jueves: '-',
+      viernes: '-',
+      sabado: '-',
+    },
+    {
+      hora: '08 pm - 09 pm',
+      lunes: '-',
+      martes: '-',
+      miercoles: '-',
+      jueves: '-',
+      viernes: '-',
+      sabado: '-',
+    },
+    {
+      hora: '09 pm - 10 pm',
+      lunes: '-',
+      martes: '-',
+      miercoles: '-',
+      jueves: '-',
+      viernes: '-',
+      sabado: '-',
+    },
+    {
+      hora: '10 pm - 11 pm',
+      lunes: '-',
+      martes: '-',
+      miercoles: '-',
+      jueves: '-',
+      viernes: '-',
+      sabado: '-',
+    },
+    {
+      hora: '11 pm - 12 pm',
+      lunes: '-',
+      martes: '-',
+      miercoles: '-',
+      jueves: '-',
+      viernes: '-',
+      sabado: '-',
+    },
   ];
-
   return (
     <>
+      {' '}
       <header>
-        <img src="download.png" alt="" />
-      </header>
-      <br />
-
+        {' '}
+        <img src="download.png" alt="" />{' '}
+      </header>{' '}
+      <br />{' '}
       <p>
+        {' '}
         <span>
+          {' '}
           Cordial saludo <strong>Jenny Katherine</strong>, a continuación podrá
-          ver el horario relacionado con el presente periodo .
-        </span>
-      </p>
-      
+          ver el horario relacionado con el presente periodo .{' '}
+        </span>{' '}
+      </p>{' '}
       <div className="Container">
-        <h1>Horario de Clases</h1>
+        {' '}
+        <h1>Horario de Clases</h1>{' '}
         <table>
+          {' '}
           <thead>
+            {' '}
             <tr>
-              <th>Hora</th>
-              <th>Lunes</th>
-              <th>Martes</th>
-              <th>Miércoles</th>
-              <th>Jueves</th>
-              <th>Viernes</th>
-              <th>Sábado</th>
-            </tr>
-          </thead>
+              {' '}
+              <th>Hora</th> <th>Lunes</th> <th>Martes</th> <th>Miércoles</th>{' '}
+              <th>Jueves</th> <th>Viernes</th> <th>Sábado</th>{' '}
+            </tr>{' '}
+          </thead>{' '}
           <tbody>
+            {' '}
             {horarioClases.map((fila, index) => (
               <tr key={index}>
-                <td>{fila.hora}</td>
+                {' '}
+                <td>{fila.hora}</td>{' '}
                 <td
                   className={fila.lunes === '-' ? 'blue' : 'red'}
                   dangerouslySetInnerHTML={{ __html: fila.lunes }}
-                ></td>
+                ></td>{' '}
                 <td
                   className={fila.martes === '-' ? 'blue' : 'red'}
                   dangerouslySetInnerHTML={{ __html: fila.martes }}
-                ></td>
+                ></td>{' '}
                 <td
                   className={fila.miercoles === '-' ? 'blue' : 'red'}
                   dangerouslySetInnerHTML={{ __html: fila.miercoles }}
-                ></td>
+                ></td>{' '}
                 <td
                   className={fila.jueves === '-' ? 'blue' : 'red'}
                   dangerouslySetInnerHTML={{ __html: fila.jueves }}
-                ></td>
+                ></td>{' '}
                 <td
                   className={fila.viernes === '-' ? 'blue' : 'red'}
                   dangerouslySetInnerHTML={{ __html: fila.viernes }}
-                ></td>
+                ></td>{' '}
                 <td
                   className={fila.sabado === '-' ? 'blue' : 'red'}
                   dangerouslySetInnerHTML={{ __html: fila.sabado }}
-                ></td>
+                ></td>{' '}
               </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+            ))}{' '}
+          </tbody>{' '}
+        </table>{' '}
+      </div>{' '}
     </>
   );
 };
-
 export default App;
