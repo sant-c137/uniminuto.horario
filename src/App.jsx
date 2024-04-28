@@ -23,24 +23,28 @@ const App = () => {
     {
       hora: '08 am - 09 am',
       lunes: 'Proyecto de Vida',
-      martes: 'Gestión Básica de la Información',
-      miercoles: 'Cálculo Diferencial',
+      martes: 'Programación Básica',
+
+      miercoles: 'CÁTEDRA MINUTO DE DIOS',
+
       jueves: 'Gestión Básica de la Información',
       viernes: 'Comunicación Escrita y Procesos Lectores I',
       sabado: '-',
     },
     {
       hora: '09 am - 10 am',
-      lunes: 'Cátedra Minuto de Dios',
-      martes: 'Gestión Básica de la Información',
-      miercoles: 'Cálculo Diferencial',
+      lunes: 'Cálculo Diferencial',
+      martes: 'Programación Básica',
+
+      miercoles: 'CÁTEDRA MINUTO DE DIOS',
+
       jueves: 'Gestión Básica de la Información',
       viernes: 'Comunicación Escrita y Procesos Lectores I',
       sabado: '-',
     },
     {
       hora: '10 am - 11 am',
-      lunes: 'Cátedra Minuto de Dios',
+      lunes: 'Cálculo Diferencial',
       martes: '-',
       miercoles: 'Física Mecánica',
       jueves: '-',
@@ -123,11 +127,10 @@ const App = () => {
       <p>
         <span>
           Cordial saludo <strong>Jenny Katherine</strong>, a continuación podrá
-          ver el horario relacionado para el presente periodo académico.
+          ver el horario relacionado con el presente periodo .
         </span>
       </p>
-      <br />
-      <br />
+      
       <div className="Container">
         <h1>Horario de Clases</h1>
         <table>
@@ -145,14 +148,32 @@ const App = () => {
           <tbody>
             {horarioClases.map((fila, index) => (
               <tr key={index}>
-              <td>{fila.hora}</td>
-              <td className={fila.lunes === '-' ? 'blue' : 'red'} dangerouslySetInnerHTML={{ __html: fila.lunes }}></td>
-              <td className={fila.martes === '-' ? 'blue' : 'red'} dangerouslySetInnerHTML={{ __html: fila.martes }}></td>
-              <td className={fila.miercoles === '-' ? 'blue' : 'red'} dangerouslySetInnerHTML={{ __html: fila.miercoles }}></td>
-              <td className={fila.jueves === '-' ? 'blue' : 'red'} dangerouslySetInnerHTML={{ __html: fila.jueves }}></td>
-              <td className={fila.viernes === '-' ? 'blue' : 'red'} dangerouslySetInnerHTML={{ __html: fila.viernes }}></td>
-              <td className={fila.sabado === '-' ? 'blue' : 'red'} dangerouslySetInnerHTML={{ __html: fila.sabado }}></td>
-            </tr>
+                <td>{fila.hora}</td>
+                <td
+                  className={fila.lunes === '-' ? 'blue' : 'red'}
+                  dangerouslySetInnerHTML={{ __html: fila.lunes }}
+                ></td>
+                <td
+                  className={fila.martes === '-' ? 'blue' : 'red'}
+                  dangerouslySetInnerHTML={{ __html: fila.martes }}
+                ></td>
+                <td
+                  className={fila.miercoles === '-' ? 'blue' : 'red'}
+                  dangerouslySetInnerHTML={{ __html: fila.miercoles }}
+                ></td>
+                <td
+                  className={fila.jueves === '-' ? 'blue' : 'red'}
+                  dangerouslySetInnerHTML={{ __html: fila.jueves }}
+                ></td>
+                <td
+                  className={fila.viernes === '-' ? 'blue' : 'red'}
+                  dangerouslySetInnerHTML={{ __html: fila.viernes }}
+                ></td>
+                <td
+                  className={fila.sabado === '-' ? 'blue' : 'red'}
+                  dangerouslySetInnerHTML={{ __html: fila.sabado }}
+                ></td>
+              </tr>
             ))}
           </tbody>
         </table>
