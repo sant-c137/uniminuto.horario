@@ -8,5 +8,12 @@
   }
   .Container {
     margin: 0% 5%;
+    margin-bottom: 10%;
+  }
+
+  p {
+    margin-left: 5%;
+
+    margin-right: 5%;
   }
 }
