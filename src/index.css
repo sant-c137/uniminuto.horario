@@ -1,0 +1,12 @@
+:root {
+  font-size: 16px;
+}
+
+@media (width < 500px) {
+  :root {
+    font-size: 6px;
+  }
+  .Container {
+    margin: 0% 5%;
+  }
+}
